@@ -1,0 +1,52 @@
+<html>
+    <head>
+           <title>button</title>
+           <link rel="stylesheet" href="style.css">
+           <style>
+            button{
+                padding-top:2px;
+                margin: 10px;
+                text-align: center;
+                
+                border-radius: 5px;
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+           </style>
+    </head>
+    <body>
+        <form onsubmit="return false">
+            
+            <label for ="first">First_Name</label>
+            <input type="text" placeholder="First Name" id="firstName" required>
+            <br><br>
+            
+            <label for ="last">Last_Name</label>
+            <input type="text" placeholder="Last Name" id="lastName" required>
+            <br><br>
+
+            <label for ="city">City</label>
+            <input type="text" placeholder="City" id="city" required>
+            <br><br>
+
+            <label for ="country">Country</label>
+            <input type="text" placeholder="Country" id="country" required>
+            <br><br>
+
+            <button type="submit" id="bottom">Add row to bottom</button>
+
+            <button type="submit" id="top">Add row to top</button>
+        </form>
+
+        <table class="myTable" id="mytable">
+            <tr>
+                <th>S.No.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+        </table>
+        <script src="button.js"></script>
+    </body>
+</html>
